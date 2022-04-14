@@ -1,38 +1,111 @@
-.App {
-  text-align: center;
+body {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 0 auto;
+    font-family: 'Inter', sans-serif;
+}
+  
+.Navbar {
+    background-color: #F55A5A;
+    width: 100%;
+    display: inline-block;
+    color: white;
+    height: 5em;
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Navbar--text {
+    padding-top: 1.5em;
+    margin: 0 auto;
+    align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.travelCard {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5em;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.travelCard--image {
+    width: 20%;
+    height: 22em;
+    background-size: cover;
+    border-radius: 10px;
+    margin-right: 5em;
 }
 
-.App-link {
-  color: #61dafb;
+.travelCard--content {
+    justify-content: space-between;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.travelCard--location-link {
+    padding-top: .5em;
+    display: flex;
+}
+
+.travelCard--location {
+    padding-right: 1em;
+}
+
+.travelCard--location-img {
+    height: 20px;
+    padding-right: .5em;
+}
+
+.travelCard--link {
+    padding-top: .2em;
+}
+
+.travelCard--text {
+    width: 33em;
+}
+
+.hr {
+    margin: 0 auto;
+    margin-top: 5em;
+    height: .1em;
+    background-color: #d3d1d6;
+    width: 70%;
+}
+
+/* Typography */
+
+.travelCard--location {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.travelCard--link {
+    color: #adaab4;
+    font-size: 0.75rem;
+    
+}
+
+.travelCard--place {
+    font-size: 2rem;
+}
+
+.travelCard--dates {
+    font-size: .9rem;
+    font-weight: 400;
+}
+
+/* Media Queries */
+
+@media (max-width: 800px) {
+    .travelCard--text {
+        width: 100%;
+    }
+
+    .travelCard {
+        padding: 5em 3em 0em 3em;
+        display: block;
+    }
+    .travelCard--image {
+        display: block;
+        width: 100%;
+    }
 }
